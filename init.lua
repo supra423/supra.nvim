@@ -22,10 +22,10 @@ vim.cmd([[
 require("config.lazy")
 
 -- persistent undo
+vim.o.undodir = vim.fn.stdpath("config") .. "/undo"
+vim.o.undolevels = 1000
+vim.o.undoreload = 10000
 vim.o.undofile = true
-vim.o.undodir = vim.fn.stdpath("config") .. "undo"
-vim.opt.undolevels = 1000
-vim.opt.undoreload = 10000
 
 vim.g.mapleader = " "
 

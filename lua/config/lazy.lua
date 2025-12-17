@@ -20,7 +20,7 @@ vim.g.autoformat = false
 
 require("lazy").setup({
 	spec = {
-		-- { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+		-- { "LazyVim/LazyVim", import = "lazyvim.plugins" }, -- I tried this at first, I disliked it
 		{ import = "plugins" },
 	},
 	install = { colorscheme = { "habamax" } },
