@@ -1,4 +1,4 @@
-![Demo GIF][demo/nvim-demo.gif]
+![Alt Text][demo/nvim-demo.gif]
 
 This is my personal neovim configurations!
 
