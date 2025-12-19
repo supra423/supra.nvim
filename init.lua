@@ -12,14 +12,12 @@ vim.o.cursorline = true
 vim.o.termguicolors = true
 vim.cmd("syntax enable")
 
--- transparent background
-vim.cmd([[
-	highlight Normal guibg=NONE ctermbg=NONE
-	highlight NormalNC guibg=NONE ctermbg=NONE
-	highlight EndOfBuffer guibg=NONE ctermbg=NONE
-]])
-
+-- lazy.nvim
 require("config.lazy")
+
+-- mason packages, not sure if this is really necessary, but this should make it
+-- so that neovim can see the bin packages installed using mason
+vim.env.PATH = vim.env.PATH .. ":" .. vim.fn.stdpath("data") .. "/mason/bin"
 
 -- persistent undo
 vim.o.undodir = vim.fn.stdpath("config") .. "/undo"
