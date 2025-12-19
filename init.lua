@@ -28,5 +28,5 @@ vim.o.undofile = true
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "\\", function()
-	vim.cmd("Lex")
+  vim.cmd("Lex")
 end)

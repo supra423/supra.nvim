@@ -10,8 +10,8 @@ return {
       c = { "cppcheck" },
       cpp = { "cppcheck" },
       python = { "ruff" },
-      rust = { "rust-analyzer" },
-      lua = { "lua-check" },
+      rust = { "clippy" },
+      lua = { "luacheck" },
     }
   end,
 }

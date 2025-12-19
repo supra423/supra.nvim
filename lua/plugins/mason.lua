@@ -30,6 +30,8 @@ return {
       "isort",
       "luacheck",
       "stylua",
+      "ruff",
+      "lua-language-server",
     },
   }),
 }
