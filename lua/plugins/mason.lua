@@ -18,6 +18,8 @@ return {
       "pyright",
       "clangd",
       "emmet_ls",
+      "eslint",
+      "ts_ls",
     },
   }),
   require("mason-tool-installer").setup({
@@ -32,6 +34,8 @@ return {
       "stylua",
       "ruff",
       "lua-language-server",
+      "eslint_d",
+      "prettierd",
     },
   }),
 }

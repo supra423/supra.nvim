@@ -12,6 +12,8 @@ return {
       python = { "ruff" },
       rust = { "clippy" },
       lua = { "luacheck" },
+      javascript = { "eslint_d" },
+      typescript = { "eslint_d" },
     }
   end,
 }
