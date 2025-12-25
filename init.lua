@@ -32,6 +32,11 @@ vim.keymap.set("n", "\\", function()
 end, { noremap = true, silent = true })
 vim.keymap.set("n", "<Esc>", ":noh<CR>", { noremap = true, silent = true })
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
+
 vim.keymap.set("n", "<S-t>", function()
   vim.cmd("term")
+end, { noremap = true, silent = true })
+
+vim.keymap.set("n", "<C-w>e", function()
+  vim.cmd("enew")
 end, { noremap = true, silent = true })
