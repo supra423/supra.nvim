@@ -1,11 +1,11 @@
 return {
-	"norcalli/nvim-colorizer.lua",
-	config = function()
-	require("colorizer").setup{
-	  '*'; -- Highlight all files, but customize some others.
-	  css = { css = true };
-	  '!vim'; -- Exclude vim from highlighting.
-	  -- Exclusion Only makes sense if '*' is specified!
-	}
-end,
+  "norcalli/nvim-colorizer.lua",
+  config = function()
+    require("colorizer").setup({
+      "*", -- Highlight all files, but customize some others.
+      css = { css = true },
+      "!vim", -- Exclude vim from highlighting.
+      -- Exclusion Only makes sense if '*' is specified!
+    })
+  end,
 }

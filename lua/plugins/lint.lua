@@ -14,6 +14,8 @@ return {
       lua = { "luacheck" },
       javascript = { "eslint_d" },
       typescript = { "eslint_d" },
+      html = { "htmlhint" }, -- idk why this thing doesnt fucking work
+      css = { "stylelint" },
     }
   end,
 }

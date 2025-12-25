@@ -20,6 +20,9 @@ return {
       "emmet_ls",
       "eslint",
       "ts_ls",
+      "html",
+      "cssls",
+      "ast_grep",
     },
   }),
   require("mason-tool-installer").setup({
@@ -36,6 +39,9 @@ return {
       "lua-language-server",
       "eslint_d",
       "prettierd",
+      "stylelint",
+      "markuplint",
+      "htmlhint",
     },
   }),
 }
