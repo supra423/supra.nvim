@@ -13,6 +13,18 @@ return {
             ["<C-h>"] = "which_key",
           },
         },
+        file_ignore_patterns = {
+          "node_modules/.*",
+          "%.env",
+          "package&-lock.json",
+          "lazy%-lock.json",
+          "target/",
+          ".git/",
+          ".cache/",
+          "/BraveSoftware/",
+          "undo/",
+          ".local/",
+        },
       },
       pickers = {
         -- Default configuration for builtin pickers goes here:
@@ -39,6 +51,6 @@ return {
     vim.cmd("Telescope buffers")
   end, opts),
   vim.keymap.set("n", "<leader>f", function()
-    vim.cmd("Telescope find_files")
+    vim.cmd("Telescope find_files hidden=true")
   end, opts),
 }
