@@ -20,7 +20,7 @@ require("config.lazy")
 vim.env.PATH = vim.env.PATH .. ":" .. vim.fn.stdpath("data") .. "/mason/bin"
 
 -- persistent undo
-vim.o.undodir = vim.fn.stdpath("config") .. "/undo"
+vim.o.undodir = vim.fn.stdpath("state") .. "/undo"
 vim.o.undolevels = 1000
 vim.o.undoreload = 10000
 vim.o.undofile = true
@@ -39,4 +39,12 @@ end, { noremap = true, silent = true })
 
 vim.keymap.set("n", "<C-w>e", function()
   vim.cmd("enew")
+end, { noremap = true, silent = true })
+
+vim.keymap.set("n", "<C-w>n", function()
+  vim.cmd("new")
+end, { noremap = true, silent = true })
+
+vim.keymap.set("n", "<C-w>v", function()
+  vim.cmd("vnew")
 end, { noremap = true, silent = true })

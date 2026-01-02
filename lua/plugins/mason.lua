@@ -22,7 +22,6 @@ return {
       "ts_ls",
       "html",
       "cssls",
-      "ast_grep",
     },
   }),
   require("mason-tool-installer").setup({
